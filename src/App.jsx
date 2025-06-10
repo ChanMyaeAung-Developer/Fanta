@@ -1,5 +1,6 @@
 import { UpdateFollower } from "react-mouse-follower";
 import Hero from "./components/Hero";
+import Product from "./components/Products/Products";
 
 
 const App=()=>{
@@ -10,7 +11,9 @@ const App=()=>{
     followSpeed:1.5,
   }}>
    <Hero/>
+      <Product/>
    </UpdateFollower>
+
   </main>
 }
 export default App;

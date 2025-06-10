@@ -39,7 +39,8 @@ const SlideRight=(delay)=>{
             image:Fanta1,
             title:"Fanta Orange",
              subtitle:"Discover the bold, fruity flavor of Fanta – where fun meets refreshment.",
-            price:'$40',
+            price:'$25',
+                 normalPrice:'$28',
             model:"Orange",
             bgColor:"#cf4f00"
         },
@@ -48,16 +49,18 @@ const SlideRight=(delay)=>{
             image:Fanta2,
             title:"Fanta berry",
              subtitle:"Discover the bold, fruity flavor of Fanta – where fun meets refreshment.",
-            price:'$40',
-            model:"berry",
-            bgColor:"#3383ff"
+            price:'$30',
+            normalPrice:'$32',
+            model:"grape",
+            bgColor:"#8011bc"
         },
         {
             id:3,
             image:Fanta3,
             title:"Coca Cola",
              subtitle:"Discover the bold, fruity flavor of Fanta – where fun meets refreshment.",
-            price:'$40',
+            price:'$20',
+                 normalPrice:'$25',
             model:"Cola",
             bgColor:"#ac1a00"
         }
@@ -170,7 +173,7 @@ const Hero=()=>{
                                         }`}/>
                                     </div>
                                     <div className="text-center !mt-1 space-y-1">
-                                    <p className="text-base line-through opacity-50">{data.price}</p>
+                                    <p className="text-base line-through opacity-50">{data.normalPrice}</p>
                                     <p className="font-bold text-xl">{data.price}</p>
                                 </div>
                                 </div>
@@ -213,9 +216,9 @@ const Hero=()=>{
            
           </div>
           {/* What Up Icon */}
-          <div className="text-3xl text-white fixed hover:rotate-[360deg] duration-500 mix-blend-difference z-[999999 bottom-10 right-10">
+          {/* <div className="text-3xl text-white fixed hover:rotate-[360deg] duration-500 mix-blend-difference z-[999999 bottom-10 right-10">
         <FaWhatsapp />
-          </div>
+          </div> */}
       </div>
       
      </motion.div>
