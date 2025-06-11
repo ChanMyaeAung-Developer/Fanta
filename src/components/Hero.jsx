@@ -19,7 +19,8 @@ const SlideRight=(delay)=>{
             transition:{
                 duration:0.5,
                 delay:delay,
-                ease:easeInOut,
+                
+                
             }
 
         },
@@ -40,7 +41,7 @@ const SlideRight=(delay)=>{
             title:"Fanta Orange",
              subtitle:"Discover the bold, fruity flavor of Fanta – where fun meets refreshment.",
             price:'$25',
-                 normalPrice:'$28',
+            normalPrice:'$28',
             model:"Orange",
             bgColor:"#cf4f00"
         },

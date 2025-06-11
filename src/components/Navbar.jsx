@@ -45,7 +45,7 @@ const Navbar=()=>{
    initial={{opacity:0,x:100}}
    animate={{opacity:1,x:0}}
    transition={{duration:0.8,delay:0.5}}
-   className="container flex justify-between items-center">
+   className="container flex justify-between items-center ">
     {/* logo section */}
     <div>
       <img src={Logo} alt="Logo" className="max-w-[80px] "/>
