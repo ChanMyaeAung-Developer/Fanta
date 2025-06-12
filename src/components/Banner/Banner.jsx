@@ -2,7 +2,7 @@ import BannerImage from '../../assets/juice.png';
 import Splash from '../../assets/splash.png'
 import { motion } from 'framer-motion';
 import { fadeUp } from '../Products/Products';
-const Banner=()=>{
+const Banner=({ activeData })=>{
     return <section>
         <div className='container grid grid-cols-1 md:grid-cols-2 md:space-y-0 space-y-6 gap-12'>
             {/* Banner image Section */}
@@ -40,14 +40,28 @@ const Banner=()=>{
                     Orange Fanta is a popular carbonated soft drink with a sweet, fruity orange flavor. Originally created in Germany during World War II, it is now produced by The Coca-Cola Company and sold worldwide. Known for its bright orange color and refreshing taste.
                      </motion.p>
                      
-                      <motion.button 
+                      {/* <motion.button 
                 
                      initial={{opacity:0,y:-100,}}
                      whileInView={{opacity:1,y:0}}
                      transition={{duration:0.5}}
                       className="!mt-5 border-2 border-primary text-primary px-2 py-2
-                                rounded-md hover:bg-primary hover:text-white duration-200">Shop Now</motion.button>
+                                rounded-md hover:bg-primary hover:text-white duration-200">Shop Now</motion.button> */}
+                                                <div
+  style={{ "--btn-color": activeData.bgColor }}
+  className="group"
+>
+  <motion.button
+     initial={{opacity:0,y:-100,}}
+      whileInView={{opacity:1,y:0}}
+     transition={{duration:0.5}}
+    className="mt-5 border-2 border-[color:var(--btn-color)] text-[color:var(--btn-color)] px-2 py-2 rounded-md duration-200 group-hover:bg-[color:var(--btn-color)] group-hover:text-white"
+  >
+    Buy Now
+  </motion.button>
+</div>
                       </div>
+
                   
                
                
