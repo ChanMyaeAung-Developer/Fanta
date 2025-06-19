@@ -16,6 +16,7 @@ const SlideRight = (delay) => ({
 });
 
 const Hero = ({ heroData, activeData, setActiveData }) => {
+  
   const handleActiveData = (data) => {
     setActiveData(data);
   };

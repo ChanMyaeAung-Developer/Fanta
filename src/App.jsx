@@ -7,6 +7,7 @@ import Banner from "./components/Banner/Banner";
 import BannerText from "./components/Banner/BannerText";
 import Blog from "./components/Blog/Blog";
 import FAQ from "./components/FAQ/FAQ";
+import Footer from "./components/Footer/Footer";
 import Fanta1 from "./assets/fanta1.png";
 import Fanta2 from "./assets/fanta2.png";
 import Fanta3 from "./assets/fanta3.png";
@@ -29,6 +30,7 @@ const heroData = [
     title: "Fanta Berry",
     subtitle: "Discover the bold, fruity flavor of Fanta – where fun meets refreshment.",
     price: "$30",
+    
     normalPrice: "$32",
     model: "grape",
     bgColor: "#8011bc",
@@ -65,6 +67,7 @@ const App = () => {
         <BannerText activeData={activeData} />
         <Blog />
         <FAQ />
+        <Footer activeData={activeData}/>
       </UpdateFollower>
     </main>
   );
